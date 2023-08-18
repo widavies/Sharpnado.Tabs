@@ -26,7 +26,7 @@ jobs:
           
       - name: Restore workload
         # if needed, the full workload can be installed with dotnet workload install maui
-        run: dotnet workload install maui
+        run: dotnet workload restore
           
       - name: Restore NuGet packages
         run: dotnet restore
